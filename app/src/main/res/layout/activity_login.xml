@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#72d572"
+    tools:context=".LoginActivity" >
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="valley.ren - DEMO 2.12"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50dp" >
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtuserid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户ID：" />
+
+            <EditText
+                android:id="@+id/edituserid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="张三"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtroomid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频道ID：" />
+
+            <EditText
+                android:id="@+id/editroomid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxWidth="100dp"
+                android:text="25"
+                android:hint="25"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="100dp"
+        android:minHeight="38dp"
+        android:textSize="25px"
+        android:background="@drawable/btn_bg_green"
+        android:layout_centerHorizontal="true"
+        android:text="登入" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:minHeight="38dp"
+        android:textSize="25px"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg_green"
+        android:text="退出" />
+
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#ffff0000"
+        android:text="房间号只允许输入50以内的数字" />
+
+    <TextView
+        android:id="@+id/hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textColor="#ffff0000"
+        android:text="其中7，8，9三个房间为高音质测试房间" />
+
+    <TextView
+        android:id="@+id/log_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="#ffff0000"
+        android:text="" />
+    
+    
+
+</RelativeLayout>

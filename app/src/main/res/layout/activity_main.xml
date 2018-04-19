@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    
+    android:padding="0dp"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+	android:paddingTop="0dp"
+    tools:context="com.example.valley_ren_audio.MainActivity" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:id="@+id/relativeLayout">
+
+		<TextView
+			android:id="@+id/status"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="30px"
+			android:text="连接状态"
+			android:background="#72d572"
+			android:gravity="center_horizontal"
+			android:layout_alignParentTop="true" />
+
+		<Button
+			android:id="@+id/btn_kickoff"
+			android:layout_width="0px"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/status"
+			android:layout_alignBottom="@+id/status"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="1dp"
+			android:layout_toRightOf="@+id/status"
+			android:minHeight="45dp"
+			android:textSize="30px"
+			android:text=""
+			android:visibility="gone"/>
+
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/userlist"
+		android:layout_width="fill_parent"
+		android:layout_height="57px"
+		android:textSize="45px"
+		android:text=" 当前房间用户列表："
+		android:layout_below="@+id/relativeLayout"
+		android:gravity="left" />
+
+	<View
+		android:id="@+id/splitline"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="10dp"
+		android:layout_height="1dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_below="@+id/userlist"
+		android:background="#aa000000" />
+
+    <RelativeLayout
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:background="#72d572" >
+
+		<LinearLayout android:id="@+id/control_bar"
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:orientation="horizontal" >
+
+
+			<Button
+				android:id="@+id/btn_spk1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:minHeight="50dp"
+				android:layout_weight="1"
+				android:textSize="30px"
+				android:text="开始接收语音" />
+
+			<Button
+				android:id="@+id/btn_mic1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:minHeight="50dp"
+				android:textSize="30px"
+				android:text="开始讲话" />
+
+			<Button
+				android:id="@+id/btn_switch1"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:minHeight="50dp"
+				android:textSize="30px"
+				android:text="切到听筒播放" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btn_close1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/textplayvolume"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="30px"
+			android:text="退出" />
+
+		<Button
+			android:id="@+id/btn_with_guan"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/control_bar"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="25px"
+			android:text="当前为观众模式"
+			android:textColor="#ffff0000"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/btn_with_zhu1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/control_bar"
+			android:layout_toRightOf="@+id/btn_with_guan"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="25px"
+			android:text="切换为主播模式"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/btn_with_zhu2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/control_bar"
+			android:layout_toRightOf="@+id/btn_with_zhu1"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="25px"
+			android:text="切换为连麦主播模式"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/btn_with_echo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_with_guan"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="30px"
+			android:text="打开耳返监听"
+			android:visibility="gone"/>
+
+		<Button
+			android:id="@+id/btn_with_backmusic"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_with_echo"
+			android:layout_weight="1"
+			android:minHeight="50dp"
+			android:textSize="30px"
+			android:text="当前背景音乐关闭" />
+
+
+		<TextView
+			android:id="@+id/textplayvolume"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_with_backmusic"
+			android:text="音量增益 >>"
+			android:padding="5dp" />
+
+		<SeekBar
+			android:id="@+id/seekBar1"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/btn_with_backmusic"
+			android:layout_toEndOf="@+id/textplayvolume"
+			android:layout_toRightOf="@+id/textplayvolume" />
+			
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/userlist"
+		android:layout_marginTop="10dp"
+        android:layout_below="@+id/splitline"
+        android:background="#FFeeeeee"
+		android:layout_above="@+id/id_toolbar">
+    </ListView>
+
+
+
+
+</RelativeLayout>
