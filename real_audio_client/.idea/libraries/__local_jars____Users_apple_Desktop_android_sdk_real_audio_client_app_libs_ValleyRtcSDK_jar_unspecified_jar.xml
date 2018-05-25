@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="__local_jars__:/Users/apple/Desktop/android-sdk/real_audio_client/app/libs/ValleyRtcSDK.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ValleyRtcSDK.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

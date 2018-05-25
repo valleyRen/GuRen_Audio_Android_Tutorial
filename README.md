@@ -1,1 +1,3 @@
 # GuRen_Audio_Android_Tutorial
+real_audio_client 为demo源码
+SDK目录为sdk源码
