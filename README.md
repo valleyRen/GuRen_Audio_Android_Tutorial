@@ -3,6 +3,7 @@
 - real_audio_client 为demo源码
 - SDK目录为sdk包
 
+官方文档地址：https://doc.valley.ren/
 
 ### DEMO运行指引
 
